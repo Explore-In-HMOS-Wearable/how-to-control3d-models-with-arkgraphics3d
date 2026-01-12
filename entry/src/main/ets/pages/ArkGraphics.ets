@@ -7,10 +7,10 @@ import Logger from '../utils/Logger';
 @Component
 export struct ArkGraphics {
   @State sceneOpt: SceneOptions | null = null;
-  @State progressValue: number = 0;
-  @State animationEnabled: Boolean = false;
-  @State animationDuration: number = 0;
-  @State animationIsRunning: Boolean = false;
+  private progressValue: number = 0;
+  private animationEnabled: Boolean = false;
+  private animationDuration: number = 0;
+  private animationIsRunning: Boolean = false;
   @State animationCallbackInvoked: string = Constants.STRING_NO;
   @State enable: boolean = true;
   scene: Scene | null = null;
@@ -47,18 +47,6 @@ export struct ArkGraphics {
           this.scene = result;
           let rf: SceneResourceFactory = this.scene.getResourceFactory();
           this.scene.environment.backgroundType = EnvironmentBackgroundType.BACKGROUND_NONE;
-
-          /*if (this.scene && this.scene.root) {
-            const node = this.scene.root.getNodeByPath('Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode');
-            if (node) {
-              const angle = Math.PI / 4;
-              node.rotation = { x: Math.sin(angle / 2), y: 0, z: 0, w: Math.cos(angle / 2) };
-
-              node.position.y -= 2;
-            } else {
-              console.error('Node cannot find!');
-            }
-          }*/
 
           if (this.anim) {
             this.anim.enabled = true;

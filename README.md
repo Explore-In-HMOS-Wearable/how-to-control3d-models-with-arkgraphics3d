@@ -7,11 +7,12 @@ This codelab shows how to use ArkGraphics 3D to manipulate a 3D model. You will 
 # Preview
 
 <div>
-    <img src="./screenshots/output1.png" width="24%" />
-    <img src="./screenshots/output2.png" width="24%" />
-    <img src="./screenshots/output3.png" width="24%" />
+<img src="./screenshots/output1.png" width="24%" />
+<img src="./screenshots/output2.png" width="24%" />
+<img src="./screenshots/output3.png" width="24%" />
 </div>
-# Use Case
+
+# Use Cases
 
 - Interactive product display (rotate/zoom objects).
 - Educational apps for visualizing 3D structures.
@@ -25,7 +26,7 @@ This codelab shows how to use ArkGraphics 3D to manipulate a 3D model. You will 
 - Libraries & Kits:
     - @kit.ArkGraphics3D Used for rendering 3D models.
 
-# Project Directory
+# Directory Structure
 
 ```
 |---pages
